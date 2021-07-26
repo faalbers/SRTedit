@@ -4,7 +4,7 @@ from srtparse.parser import SrtParser
 # After you make the proper changes below, run the command 'python srtedit.py' to run the script
 
 # rename file name to your file
-srt = SrtParser.parse('DJIG0004.srt')
+srt = SrtParser.parse('DJIG0006.srt')
 
 # If no format lines are added, the default fields are used in a column
 # The following example takes the existing named fields and replace it with your string.
@@ -25,6 +25,6 @@ srt.add_formatLine('Cell: @int( uavBat * 100 /uavBatCells ) / 100@ V')
 #print(srt)
 
 # rename file name to be saved to your file
-srt.save('DJIG0004_edit.srt')
+srt.save('DJIG0006_edit.srt')
 
 print('Done')
